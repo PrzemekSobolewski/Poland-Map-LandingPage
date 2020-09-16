@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Empik-Regular';
-    src: url('../assets/fonts/empikPro-Regular.ttf');
+    font-family: "Empik-Regular";
+    src: url("../assets/fonts/empikPro-Regular.ttf");
 }
 
 @keyframes fadein {
@@ -61,10 +61,8 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Empik-Regular';
+    font-family: "Empik-Regular";
     background-color: #f1f3f7;
-
-
 }
 
 html {
@@ -123,7 +121,6 @@ html {
     }
 }
 
-
-@import 'map.module';
-@import 'carousel.module';
-@import 'informations.module';
+@import "map.module";
+@import "carousel.module";
+@import "informations.module";

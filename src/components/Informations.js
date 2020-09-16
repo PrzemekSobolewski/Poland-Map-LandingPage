@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 
 function importAll(r) {
     return r.keys().map(r);
@@ -15,17 +15,17 @@ const country =
 }
 
 const Informations = (props) => {
-    
-const handleScroll = () => {
-    document.querySelectorAll('.info-container .row').forEach(function(obj,index) {
-      setTimeout(() => {
-        obj.classList.add('active');
-      }, 100 * index)
-    })
-  }
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-  }, []);
+
+    const handleScroll = () => {
+        document.querySelectorAll('.info-container .row').forEach(function (obj, index) {
+            setTimeout(() => {
+                obj.classList.add('active');
+            }, 100 * index)
+        })
+    }
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+    }, []);
 
     return (
         <div className="container info-container">

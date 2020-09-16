@@ -87,7 +87,7 @@ const MapChart = (props) => {
                                 <div className="col-md-12 title-rwd mobile-only">
                                     <CurvedArrow />
                                     <div>
-                                        Zakochaj się w Polsce
+                                        <span>Zakochaj się w Polsce</span>
                                     </div>
                                 </div>
                                 <div className="col-md-12 button-rwd mobile-only">
@@ -103,7 +103,7 @@ const MapChart = (props) => {
                             <div className="col-md-12 title-container">
                                 <CurvedArrow />
                                 <div>
-                                    Zakochaj się w Polsce
+                                    <span>Zakochaj się w Polsce</span>
                                 </div>
                             </div>
                             <div className="col-md-12 button-container">

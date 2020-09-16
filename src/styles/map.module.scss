@@ -10,7 +10,7 @@
 }
 
 .landing-page-container {
-    font-family: 'Empik-Regular';
+    font-family: "Empik-Regular";
     background-color: #f1f3f7;
     width: 100%;
     height: 100%;
@@ -19,7 +19,7 @@
         max-width: 100%;
         max-height: 80%;
 
-        >g>rect {
+        > g > rect {
             width: 0px;
             height: 0px;
         }
@@ -40,7 +40,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
     }
 
     .title-container {
@@ -54,6 +53,14 @@
             right: 75%;
             top: 15%;
             z-index: 120;
+            /* Safari, Chrome and Opera > 12.1 */
+            -moz-animation: fadein 0.8s;
+            /* Firefox < 16 */
+            -ms-animation: fadein 0.8s;
+            /* Internet Explorer */
+            -o-animation: fadein 0.8s;
+            /* Opera < 12.1 */
+            animation: fadein 0.8s;
 
             @media screen and (max-width: 1250px) {
                 right: 70%;
@@ -68,7 +75,7 @@
             }
         }
 
-        >div {
+        > div {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -78,8 +85,19 @@
             background-color: #ffffff;
             font-size: 35px;
             font-weight: bold;
+            span {
+                text-align: center;
+                -webkit-animation: fadein 0.8s;
+                /* Safari, Chrome and Opera > 12.1 */
+                -moz-animation: fadein 0.8s;
+                /* Firefox < 16 */
+                -ms-animation: fadein 0.8s;
+                /* Internet Explorer */
+                -o-animation: fadein 0.8s;
+                /* Opera < 12.1 */
+                animation: fadein 0.8s;
+            }
         }
-
     }
 
     .short-desc {
@@ -91,8 +109,17 @@
         border-top: 1px solid #dee1e6;
         padding: 10px 0;
         width: 100%;
+        -webkit-animation: fadein 0.8s;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 0.8s;
+        /* Firefox < 16 */
+        -ms-animation: fadein 0.8s;
+        /* Internet Explorer */
+        -o-animation: fadein 0.8s;
+        /* Opera < 12.1 */
+        animation: fadein 0.8s;
 
-        >p {
+        > p {
             text-align: center;
             font-size: 25px;
             color: #000000;
@@ -105,7 +132,7 @@
         height: calc(50vh - 45px);
         background-color: #f1f3f7;
 
-        >div {
+        > div {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -132,15 +159,15 @@
     font-size: 22px;
     font-weight: 500;
     margin: auto;
-    -webkit-animation: fadein .5s;
+    -webkit-animation: fadein 0.8s;
     /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein .5s;
+    -moz-animation: fadein 0.8s;
     /* Firefox < 16 */
-    -ms-animation: fadein .5s;
+    -ms-animation: fadein 0.8s;
     /* Internet Explorer */
-    -o-animation: fadein .5s;
+    -o-animation: fadein 0.8s;
     /* Opera < 12.1 */
-    animation: fadein .5s;
+    animation: fadein 0.8s;
 
     &:hover {
         cursor: pointer;
@@ -217,10 +244,9 @@
             -ms-transform: rotateZ(-270deg) rotateX(180deg);
             bottom: 150%;
             right: 50%;
-
         }
 
-        >div {
+        > div {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -250,7 +276,6 @@
 @media screen and (max-width: 580px) {
     .short-desc {
         flex-direction: column;
-       
     }
 
     .title-rwd {
@@ -264,7 +289,6 @@
             bottom: 100%;
         }
     }
-
 }
 
 @media screen and (max-width: 360px) {
