@@ -1,0 +1,18 @@
+[
+    { "id": "Śląskie", "val": "0" },
+    { "id": "Opolskie", "val": "1"},
+    { "id": "Wielkopolskie", "val": "2" },
+    { "id": "Zachodniopomorskie", "val": "3"},
+    { "id": "Świętokrzyskie", "val": "4"},
+    { "id": "Kujawsko-pomorskie", "val": "5"},
+    { "id": "Podlaskie", "val": "6"},
+    { "id": "Dolnośląskie", "val": "7"},
+    { "id": "Podkarpackie", "val": "8"},
+    { "id": "Małopolskie", "val": "9"},
+    { "id": "Pomorskie", "val": "10"},
+    { "id": "Warmińsko-mazurskie", "val": "11"},
+    { "id": "Łódzkie", "val": "12"},
+    { "id": "Mazowieckie", "val": "13"},
+    { "id": "Lubelskie", "val": "14"},
+    { "id": "Lubuskie", "val": "15"}
+]

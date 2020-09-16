@@ -1,0 +1,121 @@
+.w-50 {
+    width: 40% !important;
+}
+
+@media screen and (max-width: 1400px) {
+    .w-50 {
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .w-50 {
+        width: 55% !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .w-50 {
+        width: 60% !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .w-50 {
+        width: 75% !important;
+    }
+}
+
+.carousel-container {
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+
+    &.active {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .carousel.slide {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .d-block {
+        margin: auto;
+    }
+
+    .carousel-caption {
+        position: static;
+        color: #000000;
+    }
+
+    .slide-content {
+        padding: 30px 30px 5px;
+        background-color: #ffffff;
+
+        @media screen and (max-width: 800px) {
+            padding: 10px 10px 0;
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .close-carousel {
+        position: absolute;
+        z-index: 200;
+        top: 20px;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+
+        &:after,
+        &:before {
+            content: "";
+            width: 30px;
+            height: 4px;
+            background-color: rgb(193, 193, 193);
+            position: absolute;
+            left: 0;
+            top: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+
+        }
+
+        &:after {
+            transform: rotateZ(45deg);
+        }
+
+        &:before {
+            transform: rotateZ(-45deg);
+        }
+
+        &:hover {
+
+            &:after,
+            &:before {
+                background-color: #ffffff;
+            }
+
+        }
+
+    }
+}
