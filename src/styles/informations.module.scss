@@ -1,5 +1,5 @@
 .info-container {
-    > .row {
+    >.row {
         margin-bottom: 30px;
         position: relative;
         transform: translateX(-5000px);
@@ -9,6 +9,7 @@
         -moz-transition: all 0.5s ease-out;
         -o-transition: all 0.5s ease-out;
         -ms-transition: all 0.5s ease-out;
+
         &.active {
             transform: translateX(0);
             opacity: 1;
@@ -31,7 +32,7 @@
 
     >div:nth-child(even) .single-info {
         flex-direction: row-reverse;
-       
+
         .image-content {
             border-right: 1px solid #dee1e6;
 
@@ -45,6 +46,7 @@
             border: none
         }
     }
+
     @media screen and (max-width: 1052px) {
         .info-content {
             font-size: 20px;
